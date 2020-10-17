@@ -2,5 +2,5 @@
 
 IIT Kharagpur,          
 Computer Science and Engineering,             
-Semester 5
+Semester 5                                        
 Autumn 2020
