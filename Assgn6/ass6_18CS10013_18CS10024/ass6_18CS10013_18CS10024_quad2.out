@@ -1,0 +1,213 @@
+'\''\'_________________________________________________________________________________
+Generated Quads for the program
+  0 : t000	=	100
+  1 : t001	=	100
+  2 : t002	=	1
+  3 : i	=	t002
+  4 : t003	=	t002
+  5 : t004	=	100
+  6 : if  i <=t004	goto 12
+  7 : goto 31
+  8 : goto 31
+  9 : t005	=	i
+ 10 : i	=	i + 1
+ 11 : goto 5
+ 12 : t006	=	0
+ 13 : t007	=	1
+ 14 : t008	=	i - t007
+ 15 : t010	=	t008 * 1
+ 16 : t009	=	t006 + t010
+ 17 : t011	=	0
+ 18 : t012	=	 Int2Char(t011)
+ 19 : binaryN[t009]	=	t012
+ 20 : t013	=	t012
+ 21 : t014	=	0
+ 22 : t015	=	1
+ 23 : t016	=	i - t015
+ 24 : t018	=	t016 * 1
+ 25 : t017	=	t014 + t018
+ 26 : t019	=	0
+ 27 : t020	=	 Int2Char(t019)
+ 28 : reverseBinaryN[t017]	=	t020
+ 29 : t021	=	t020
+ 30 : goto 9
+ 31 : param	_0
+ 32 : t022	=	call printStr, 1
+ 33 : param	_1
+ 34 : t023	=	call printStr, 1
+ 35 : t024	=	1
+ 36 : err	=	t024
+ 37 : t025	=	& err
+ 38 : param	t025
+ 39 : t026	=	call readInt, 1
+ 40 : N	=	t026
+ 41 : t027	=	t026
+ 42 : tempN	=	N
+ 43 : t028	=	N
+ 44 : t029	=	0
+ 45 : j	=	t029
+ 46 : t030	=	0
+ 47 : if  tempN !=t030	goto 50
+ 48 : goto 77
+ 49 : goto 77
+ 50 : t031	=	2
+ 51 : t032	=	tempN % t031
+ 52 : t033	=	1
+ 53 : if  t032 ==t033	goto 56
+ 54 : goto 63
+ 55 : goto 70
+ 56 : t034	=	0
+ 57 : t036	=	j * 1
+ 58 : t035	=	t034 + t036
+ 59 : t037	=	'1'
+ 60 : reverseBinaryN[t035]	=	t037
+ 61 : t038	=	t037
+ 62 : goto 70
+ 63 : t039	=	0
+ 64 : t041	=	j * 1
+ 65 : t040	=	t039 + t041
+ 66 : t042	=	'0'
+ 67 : reverseBinaryN[t040]	=	t042
+ 68 : t043	=	t042
+ 69 : goto 70
+ 70 : t044	=	j
+ 71 : j	=	j + 1
+ 72 : t045	=	2
+ 73 : t046	=	tempN / t045
+ 74 : tempN	=	t046
+ 75 : t047	=	t046
+ 76 : goto 46
+ 77 : t048	=	0
+ 78 : i	=	t048
+ 79 : t049	=	t048
+ 80 : t050	=	0
+ 81 : if  j >t050	goto 84
+ 82 : goto 100
+ 83 : goto 100
+ 84 : t051	=	0
+ 85 : t053	=	i * 1
+ 86 : t052	=	t051 + t053
+ 87 : t054	=	0
+ 88 : t055	=	1
+ 89 : t056	=	j - t055
+ 90 : t058	=	t056 * 1
+ 91 : t057	=	t054 + t058
+ 92 : t059	=	reverseBinaryN[t057]
+ 93 : binaryN[t052]	=	t059
+ 94 : t060	=	t059
+ 95 : t061	=	j
+ 96 : j	=	j - 1
+ 97 : t062	=	i
+ 98 : i	=	i + 1
+ 99 : goto 80
+100 : param	_2
+101 : t063	=	call printStr, 1
+102 : t064	=	0
+103 : param	binaryN
+104 : t065	=	call printStr, 1
+105 : param	_3
+106 : t066	=	call printStr, 1
+107 : param	_4
+108 : t067	=	call printStr, 1
+109 : t068	=	0
+110 : return	t068
+_________________________________________________________________________________
+Symbol table Maintained For the Given Program
+____________________________________________ Global ____________________________________________
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	var_type	size	Offset	Type
+
+printInt	null	func		0	-1	ptr-to-St( Global )Int
+readInt	null	func		0	-1	ptr-to-St( Global )Int
+printStr	null	func		0	-1	ptr-to-St( Global )Int
+main	null	func		0	-1	ptr-to-St( main )Int
+
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
+_________________________________________________________________________________
+____________________________________________ main ____________________________________________
+Offset = -470
+Start Quad Index = 0
+End Quad Index =  110
+Name	Value	var_type	size	Offset	Type
+
+retVal	null	return		4	0	Int
+N	null	local		4	-4	Int
+tempN	null	local		4	-8	Int
+binaryN	null	local		100	-108	array(100,Char)
+t000	100	temp		4	-112	Int
+reverseBinaryN	null	local		100	-212	array(100,Char)
+t001	100	temp		4	-216	Int
+i	null	local		4	-220	Int
+t002	1	temp		4	-224	Int
+t003	null	temp		4	-228	Int
+t004	100	temp		4	-232	Int
+t005	null	temp		4	-236	Int
+t006	0	temp		4	-240	Int
+t007	1	temp		4	-244	Int
+t008	null	temp		4	-248	Int
+t009	null	temp		4	-252	Int
+t010	null	temp		4	-256	Int
+t011	0	temp		4	-260	Int
+t012	null	temp		1	-261	Char
+t013	null	temp		1	-262	Char
+t014	0	temp		4	-266	Int
+t015	1	temp		4	-270	Int
+t016	null	temp		4	-274	Int
+t017	null	temp		4	-278	Int
+t018	null	temp		4	-282	Int
+t019	0	temp		4	-286	Int
+t020	null	temp		1	-287	Char
+t021	null	temp		1	-288	Char
+t022	null	temp		4	-292	Int
+t023	null	temp		4	-296	Int
+err	1	local		4	-300	Int
+t024	1	temp		4	-304	Int
+t025	null	temp		8	-312	ptr(Int)
+t026	null	temp		4	-316	Int
+t027	null	temp		4	-320	Int
+t028	null	temp		4	-324	Int
+j	0	local		4	-328	Int
+t029	0	temp		4	-332	Int
+t030	0	temp		4	-336	Int
+t031	2	temp		4	-340	Int
+t032	null	temp		4	-344	Int
+t033	1	temp		4	-348	Int
+t034	0	temp		4	-352	Int
+t035	null	temp		4	-356	Int
+t036	null	temp		4	-360	Int
+t037	1	temp		1	-361	Char
+t038	null	temp		1	-362	Char
+t039	0	temp		4	-366	Int
+t040	null	temp		4	-370	Int
+t041	null	temp		4	-374	Int
+t042	0	temp		1	-375	Char
+t043	null	temp		1	-376	Char
+t044	null	temp		4	-380	Int
+t045	2	temp		4	-384	Int
+t046	null	temp		4	-388	Int
+t047	null	temp		4	-392	Int
+t048	0	temp		4	-396	Int
+t049	null	temp		4	-400	Int
+t050	0	temp		4	-404	Int
+t051	0	temp		4	-408	Int
+t052	null	temp		4	-412	Int
+t053	null	temp		4	-416	Int
+t054	0	temp		4	-420	Int
+t055	1	temp		4	-424	Int
+t056	null	temp		4	-428	Int
+t057	null	temp		4	-432	Int
+t058	null	temp		4	-436	Int
+t059	null	temp		1	-437	Char
+t060	null	temp		1	-438	Char
+t061	null	temp		4	-442	Int
+t062	null	temp		4	-446	Int
+t063	null	temp		4	-450	Int
+t064	0	temp		4	-454	Int
+t065	null	temp		4	-458	Int
+t066	null	temp		4	-462	Int
+t067	null	temp		4	-466	Int
+t068	0	temp		4	-470	Int
+
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-
